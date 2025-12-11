@@ -1,0 +1,140 @@
+.manage-jobs {
+  padding: 30px 20px;
+  background-color: var(--bg-secondary);
+  min-height: calc(100vh - 70px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.manage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.manage-header h1 {
+  font-size: 2rem;
+}
+
+.jobs-table {
+  background-color: var(--bg-primary);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--bg-secondary);
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-primary);
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-secondary);
+}
+
+tr:hover {
+  background-color: var(--bg-secondary);
+}
+
+.title-cell {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.type-badge {
+  background-color: var(--info-color);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-edit {
+  background-color: var(--info-color);
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #1875d2;
+}
+
+.btn-delete {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #d9001a;
+}
+
+.btn-delete:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.empty-state {
+  background-color: var(--bg-primary);
+  border-radius: 8px;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.loading-center {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+@media (max-width: 768px) {
+  .jobs-table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  .manage-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}

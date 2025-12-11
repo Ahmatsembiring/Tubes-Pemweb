@@ -1,0 +1,138 @@
+.profile-page {
+  padding: 30px 20px;
+  background-color: var(--bg-secondary);
+  min-height: calc(100vh - 70px);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-page h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.profile-container {
+  background-color: var(--bg-primary);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: var(--shadow-md);
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-section {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+}
+
+.form-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+  transition: var(--transition);
+}
+
+.form-textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 82, 204, 0.1);
+  outline: none;
+}
+
+.file-upload {
+  background-color: var(--bg-secondary);
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.file-upload:hover {
+  border-color: var(--primary-color);
+  background-color: rgba(0, 82, 204, 0.05);
+}
+
+.file-upload input {
+  display: none;
+}
+
+.upload-label {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.upload-label:hover {
+  color: var(--primary-dark);
+}
+
+.file-info {
+  margin-top: 15px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.file-info a {
+  color: var(--primary-color);
+}
+
+.btn-large {
+  padding: 14px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.success-alert {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-radius: 4px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  color: var(--success-color);
+}
+
+.loading-center {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 20px;
+  }
+}
